@@ -18,6 +18,15 @@ library(tidyverse)
 install.packages("readxl")
 library(readxl)
 
+#When loading tidyverse, an error came known as conflicts so for that this command needs to be used
+devtools::install_github("r-lib/conflicted")
+
+#Then load
+library(conflicted)
+library(dplyr)
+
+
+
 
 barplot(height, width = 1, space = 1,
         names.arg = NULL, legend.text = NULL, beside = FALSE,
